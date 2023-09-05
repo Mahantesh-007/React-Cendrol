@@ -8,7 +8,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route
-            path="/"
+            path="/React-Cendrol"
             element={
               <RandomJokes />
             }
