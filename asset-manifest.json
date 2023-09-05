@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/React-Cendrol/static/css/main.a39dfa1c.css",
-    "main.js": "/React-Cendrol/static/js/main.9495a93a.js",
-    "static/js/787.b701888c.chunk.js": "/React-Cendrol/static/js/787.b701888c.chunk.js",
-    "index.html": "/React-Cendrol/index.html",
-    "main.a39dfa1c.css.map": "/React-Cendrol/static/css/main.a39dfa1c.css.map",
-    "main.9495a93a.js.map": "/React-Cendrol/static/js/main.9495a93a.js.map",
-    "787.b701888c.chunk.js.map": "/React-Cendrol/static/js/787.b701888c.chunk.js.map"
+    "main.css": "/React-Cendrol/react-app/src/static/css/main.a39dfa1c.css",
+    "main.js": "/React-Cendrol/react-app/src/static/js/main.f2e5ace1.js",
+    "static/js/787.b701888c.chunk.js": "/React-Cendrol/react-app/src/static/js/787.b701888c.chunk.js",
+    "index.html": "/React-Cendrol/react-app/src/index.html",
+    "main.a39dfa1c.css.map": "/React-Cendrol/react-app/src/static/css/main.a39dfa1c.css.map",
+    "main.f2e5ace1.js.map": "/React-Cendrol/react-app/src/static/js/main.f2e5ace1.js.map",
+    "787.b701888c.chunk.js.map": "/React-Cendrol/react-app/src/static/js/787.b701888c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a39dfa1c.css",
-    "static/js/main.9495a93a.js"
+    "static/js/main.f2e5ace1.js"
   ]
 }
