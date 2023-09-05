@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.card{
+    @apply block md:w-4/5 w-full aspect-video overflow-hidden shadow-xl transition duration-300 ease-in-out border rounded-lg hover:shadow-sm hover:border-gray-300
+}
+
+.flexCenter{
+  @apply flex items-center justify-center
+}
+
+.gridLayout{
+  @apply grid gap-y-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4
+}
+
+.headingBounce{
+  @apply font-extrabold md:text-5xl text-4xl py-5 animate-bounce
+}
