@@ -13,6 +13,7 @@ const RandomJokes = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentCategory, setCurrentCategory] = useState("");
   const [isLoading, setIsLoading] = useState(true);
+  const [changeJoke, setChangeJoke] = useState(true);
 
   useEffect(() => {
     fetchCategories();
@@ -24,23 +25,23 @@ const RandomJokes = () => {
     setIsLoading(false);
   };
   const displayJoke = async (jokeCategory, index) => {
-    setIsLoading(true); // Show loading screen when fetching a new joke
+    setChangeJoke(true);
     const data = await fetchRandomJoke(jokeCategory);
     if (data) {
       setJoke(data.value);
       setCurrentCategory(categories[index]);
       setIsModalOpen(true);
     }
-    setIsLoading(false);
+    setChangeJoke(false);
   };
 
   const displayNextJoke = async () => {
-    setIsLoading(true); 
+    setChangeJoke(true);
     const data = await displayRandomNextJoke(currentCategory);
     if (data) {
       setJoke(data.value);
     }
-    setIsLoading(false);
+    setChangeJoke(false);
   };
   const closeModal = () => {
     setIsModalOpen(false);
@@ -50,9 +51,7 @@ const RandomJokes = () => {
   return (
     <>
       <section className="text-black mx-auto bg-gradient-to-r from-purple-400 via-pink-500 to-red-600">
-        <h1 className=" headingBounce flexCenter ">
-          Chuck Norries
-        </h1>
+        <h1 className=" headingBounce flexCenter ">Chuck Norries</h1>
         {isLoading ? (
           <div className="h-screen flexCenter">
             <Loading />
@@ -86,7 +85,7 @@ const RandomJokes = () => {
             joke={joke}
             categories={currentCategory}
             displayNextJoke={displayNextJoke}
-            isLoading={isLoading}
+            changeJoke={changeJoke}
           />
         )}
       </section>

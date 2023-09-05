@@ -6,14 +6,14 @@ const DisplayJoke = ({
   joke,
   categories,
   displayNextJoke,
-  isLoading,
+  changeJoke,
 }) => {
   return (
     <div>
       <div className="fixed inset-0 flex items-center justify-center z-50">
         <div className="absolute inset-0 bg-gray-800 opacity-75" />
         <div className="z-10 md:w-1/2 w-full bg-white p-4 rounded-lg shadow-md">
-          {isLoading ? (
+          {changeJoke ? (
             <Loading />
           ) : (
             <div className="text-center">
